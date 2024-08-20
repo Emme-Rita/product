@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+}
+.products{
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.products img{
+    max-width: 100%;
+    height:auto;
+}
+button{
+ background: rgb(63, 231, 63);
+ padding: 10px;
+ border: none; 
+ cursor: pointer;  
+}
+@media(max-width:1024px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 768px){
+    .container{
+        grid-template-columns: 1fr;
+}
+    }
+    
